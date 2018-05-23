@@ -1,0 +1,166 @@
+
+Number of Threads:	1
+Image size:		640 x 480
+Filter size:		30
+Time (in s):
+	real:	   1.37
+	user:	   1.37
+	system:	   0.00
+
+
+Number of Threads:	2
+Image size:		640 x 480
+Filter size:		30
+Time (in s):
+	real:	   0.73
+	user:	   1.45
+	system:	   0.00
+
+
+Number of Threads:	4
+Image size:		640 x 480
+Filter size:		30
+Time (in s):
+	real:	   0.39
+	user:	   1.52
+	system:	   0.00
+
+
+Number of Threads:	8
+Image size:		640 x 480
+Filter size:		30
+Time (in s):
+	real:	   0.21
+	user:	   1.70
+	system:	   0.00
+
+
+
+
+Number of Threads:	1
+Image size:		640 x 480
+Filter size:		30
+Time (in s):
+	real:	   1.38
+	user:	   1.37
+	system:	   0.00
+
+
+Number of Threads:	2
+Image size:		640 x 480
+Filter size:		30
+Time (in s):
+	real:	   0.71
+	user:	   1.44
+	system:	   0.00
+
+
+Number of Threads:	4
+Image size:		640 x 480
+Filter size:		30
+Time (in s):
+	real:	   0.39
+	user:	   1.53
+	system:	   0.00
+
+
+Number of Threads:	8
+Image size:		640 x 480
+Filter size:		30
+Time (in s):
+	real:	   0.22
+	user:	   1.70
+	system:	   0.00
+
+
+
+
+Number of Threads:	1
+Image size:		640 x 480
+Filter size:		10
+Time (in s):
+	real:	   0.15
+	user:	   0.15
+	system:	   0.00
+
+
+Number of Threads:	2
+Image size:		640 x 480
+Filter size:		10
+Time (in s):
+	real:	   0.08
+	user:	   0.16
+	system:	   0.00
+
+
+Number of Threads:	4
+Image size:		640 x 480
+Filter size:		10
+Time (in s):
+	real:	   0.05
+	user:	   0.17
+	system:	   0.00
+
+
+Number of Threads:	8
+Image size:		640 x 480
+Filter size:		10
+Time (in s):
+	real:	   0.03
+	user:	   0.20
+	system:	   0.00
+
+
+
+
+Number of Threads:	1
+Image size:		640 x 480
+Filter size:		10
+Time (in s):
+	real:	   0.15
+	user:	   0.16
+	system:	   0.00
+
+
+Number of Threads:	2
+Image size:		640 x 480
+Filter size:		10
+Time (in s):
+	real:	   0.08
+	user:	   0.16
+	system:	   0.00
+
+
+Number of Threads:	4
+Image size:		640 x 480
+Filter size:		10
+Time (in s):
+	real:	   0.05
+	user:	   0.17
+	system:	   0.00
+
+
+Number of Threads:	8
+Image size:		640 x 480
+Filter size:		10
+Time (in s):
+	real:	   0.03
+	user:	   0.20
+	system:	   0.00
+
+
+
+KOMENTARZ:
+
+
+Widać wyraźnie, że wraz ze wzrostem liczby wątków, maleje czas rzeczywisty, ale czas użytkownika pozostaje na tym samym poziomie. 
+Dzieje się tak prawdopodobnie dlatego, że czas użytkownika jest liczony jako suma czasu procesora poświęconego dla każdego z wątków.
+Łatwo zauważyć zależność(w przybliżeniu) UT = Liczba wątków * RT.
+
+Rozmiar filtra jak się można było spodziewać bezpośrednio wpływa na oba czasy, wraz ze wzrostem rozmiarów filtra, wzrasta czas
+wykonania programu. Zależność między UT, a RT pozostaje ta sama.
+
+System time pozostaje na poziomie równym zero, prawdopodobnie dlatego, że nie używamy w tym programie dużo funkcji systemowych,
+a cały czas poświęcony jest na obliczenia obrazu z filtrem.
+
+
